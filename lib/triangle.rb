@@ -15,7 +15,7 @@ class Triangle
       raise TriangleError
     end
 
-    :equilateral == @length1 == @length2 && @length2 == @length3
+    :equilateral == ()@length1 == @length2) && (@length2 == @length3)
 
   #   elsif @length1 == @length2 && @length2 == @length3
   #     return :equilateral
