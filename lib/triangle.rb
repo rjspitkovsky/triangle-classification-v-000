@@ -19,10 +19,13 @@ class Triangle
       return :equilateral
     end
 
+
+
   #   elsif @length1 == @length2 && @length2 == @length3
   #     return :equilateral
-  #   elsif @length1 == @length2 || @length1 == @length3 || @length2 == @length3 && !(@length1 == @length2 && @length2 == @length3)
-  #     return :isosceles
+    if @length1 == @length2 || @length1 == @length3 || @length2 == @length3 && !(@length1 == @length2 && @length2 == @length3)
+      return :isosceles
+    end 
   #   else
   #     return :scalene
   #   end
