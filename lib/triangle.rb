@@ -13,7 +13,7 @@ class Triangle
       (@length1 + @length2 > @length3 || @length1 + @length3 > @length2 ||
       @length2 + @length3 > @length1)
       raise TriangleError
-    end 
+    end
 
   #   elsif @length1 == @length2 && @length2 == @length3
   #     return :equilateral
@@ -22,7 +22,7 @@ class Triangle
   #   else
   #     return :scalene
   #   end
-  # end
+  end
 end
 
 
