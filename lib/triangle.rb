@@ -30,7 +30,7 @@ class Triangle
    end
 
 
-  end
+  
 
 
   # def self.invalid?
