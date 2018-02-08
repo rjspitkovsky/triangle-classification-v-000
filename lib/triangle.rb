@@ -11,7 +11,7 @@ class Triangle
   def kind
     if self.length1 <= 0 || self.length2 <= 0 || self.length3 <= 0 ||self.length1 + self.length2 <= self.length3 || self.length1 + self.length3 <= self.length2 || self.length2 + self.length3 <= self.length1
      raise TriangleError
-   end 
+   end
 
     if (@length1 == @length2) && (@length2 == @length3)
       return :equilateral
@@ -21,11 +21,6 @@ class Triangle
     elsif @length1 != @length2 && @length2 != @length3 && @length1 != @length3
       return :scalene
     elsif
-
-
-     self.length1 <= 0 || self.length2 <= 0 || self.length3 <= 0 ||self.length1 + self.length2 <= self.length3 || self.length1 + self.length3 <= self.length2 || self.length2 + self.length3 <= self.length1
-      raise TriangleError
-
      end
   end
 end
