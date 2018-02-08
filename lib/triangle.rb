@@ -27,6 +27,7 @@ class Triangle
       raise TriangleError
   end
 end
+end 
 
 
 
