@@ -22,6 +22,7 @@ class Triangle
       return :scalene
     elsif
      end
+   end 
   end
 end
 
