@@ -27,10 +27,10 @@ class Triangle
   #   rescue TriangleError => error
   #     error.message
   #
-   end
+   
 
 
-  
+
 
 
   # def self.invalid?
