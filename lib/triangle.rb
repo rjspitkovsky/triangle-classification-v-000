@@ -20,14 +20,17 @@ class Triangle
     if @length1 != @length2 && @length2 != @length3 && @length1 != @length3
       return :scalene
     end
-end
-end
-  #   if (@length1 == 0 || @length2 == 0 || @length3 == 0) ||(@length1 + @length2 > @length3 || @length1 + @length3 > @length2 || @length2 + @length3 > @length1)
-  #     raise TriangleError
-  #   end
-  #   rescue TriangleError => error
-  #     error.message
-  #
+
+
+    if (@length1 == 0 || @length2 == 0 || @length3 == 0) ||(@length1 + @length2 > @length3 || @length1 + @length3 > @length2 || @length2 + @length3 > @length1)
+      raise TriangleError
+    rescue TriangleError => error
+      error.message
+    end
+
+  end
+end 
+
 
 
 
@@ -42,5 +45,5 @@ end
 class TriangleError < StandardError
   def message
     "This triangle violates triangle inequality."
-  end 
+  end
 end
