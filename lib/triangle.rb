@@ -17,7 +17,7 @@ class Triangle
       return :isosceles
     elsif @length1 != @length2 && @length2 != @length3 && @length1 != @length3
       return :scalene
-    else
+    elsif
 
 
      (self.length1 == 0 || self.length2 == 0 || self.length3 == 0) ||(self.length1 + self.length2 > self.length3 || self.length1 + self.length3 > self.length2 || self.length2 + self.length3 > self.length1)
