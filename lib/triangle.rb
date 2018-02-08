@@ -25,10 +25,10 @@ class Triangle
   #     return :equilateral
     if @length1 == @length2 || @length1 == @length3 || @length2 == @length3 && !(@length1 == @length2 && @length2 == @length3)
       return :isosceles
-    end 
-  #   else
-  #     return :scalene
-  #   end
+
+    else
+      return :scalene
+    end
   end
 end
 
