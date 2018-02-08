@@ -23,7 +23,11 @@ class Triangle
 
     if self.invalid?
       raise TriangleError
+    rescue TriangleError => error
+      puts error.message
     end
+
+    
   end
 
 
@@ -33,5 +37,6 @@ class Triangle
 end
 
 class TriangleError < StandardError
-
+  def message
+    "This triangle violates triangle inequality."
 end
