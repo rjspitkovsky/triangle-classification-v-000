@@ -21,10 +21,10 @@ class Triangle
       return :scalene
     end
 
-    if self.invalid? 
+    if self.invalid?
       raise TriangleError
-    end 
-  end 
+    end
+  end
 
 
   def self.invalid?
