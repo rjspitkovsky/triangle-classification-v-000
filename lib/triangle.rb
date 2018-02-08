@@ -13,7 +13,7 @@ class Triangle
       begin
       raise TriangleError
     end
-    
+
     if (@length1 == @length2) && (@length2 == @length3)
       return :equilateral
     end
@@ -31,7 +31,7 @@ class Triangle
     #   begin
     #   raise TriangleError
     # end
-    # end
+     end
   end
 end
 
